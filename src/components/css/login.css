@@ -1,0 +1,75 @@
+/* login and signupform css */
+/* Background Color */
+.login-page {
+  background: linear-gradient(to bottom, #df20af, white); /* Gradient from #3498db to white */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Centered Login Box */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Headline */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker color for consistency with homepage */
+  font-size: 24px;
+}
+
+/* Input Container */
+.input-container {
+  margin: 10px 0;
+}
+
+/* Input Fields */
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+/* Sign Up Button */
+button {
+  padding: 10px 20px;
+  background-color: #df20af; /* Match homepage button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Disable button when conditions are not met */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Sign Up Message */
+.signup-message {
+  color: green; /* Color for success messages */
+  margin-top: 10px;
+}

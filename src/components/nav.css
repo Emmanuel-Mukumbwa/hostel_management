@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #df20af;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li:hover {
+    background-color: #df20af;
+  }

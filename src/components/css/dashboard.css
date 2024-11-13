@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1, h2 {
+  color: #4567b7;
+}
+
+p {
+  color: #666;
+}
+
+button {
+  background-color: #4567b7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #4567b7;
+}
+
+/* Dashboard Styles */
+.student-dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  background-color: #333333;
+  color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #2980b9;
+}
+
+/* Main Dashboard Content */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.dashboard-content h1 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.student-details {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.student-details h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.student-details p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0. 15);
+}
+
+.dashboard-card h2 {
+  font-size: 22px;
+  color: #3498db;
+}
+
+.dashboard-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-card li {
+  font-size: 16px;
+  color: #333;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-card li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .card-container {
+    grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+  }
+}

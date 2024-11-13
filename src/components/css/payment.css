@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .login-page {
+    background: linear-gradient(135deg, #df20af, #f1c40f);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  body {
+    font-family: Open Sans, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    min-height: 100vh; /* Add min-height to make the body take up the full height of the viewport */
+    display: flex; /* Add display: flex to make the body a flex container */
+    flex-direction: column; /* Add flex-direction: column to make the body a column flex container */
+    justify-content: space-between; /* Add this to make the footer stick to the bottom */
+  }
+  .main-container {
+    flex: 1; /* Add flex: 1 to make the main container take up the remaining space */
+  }
+  
+  .payment-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+  }
+  
+  /* Image Card (Left Side) */
+  .image-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Add a fixed width */
+    height: 300px; /* Add a fixed height */
+  }
+  
+  .slideshow-image {
+    max-width: 100%;
+    max-height: 100%; /* Add max-height to scale the image */
+    border-radius: 10px;
+    object-fit: cover; /* Add object-fit to scale the image */
+  }
+  
+  /* Payment Card (Right Side) */
+  .payment-card {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .payment-card h1 {
+    font-size: 24px;
+    color: #df20af;
+    margin-bottom: 20px;
+  }
+  
+  .payment-card input, .payment-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payment-card input[type="file"] {
+    padding: 5px;
+  }
+  
+  .payment-card button {
+    background-color: #df20af;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .payment-card button:hover {
+    background-color: #df20af;
+  }
+  
+  .payment-card p {
+    margin-top: 15px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .payment-container {
+      flex-direction: column;
+    }
+  
+    .image-card, .payment-card {
+      max-width: 100%;
+    }
+  }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  
+  .faq button {
+    background-color: #df20af;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .faq-container {
+    display: none;
+  }
+  
+  .faq-visible .faq-container {
+    display: block;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 18px;
+  }
+  
+  /* FAQ Section */
+  .faq-container {
+    display: none;
+  }
+  
+  .faq-visible .faq-container {
+    display: block;
+  }
+  
+  
+  .footer {
+    background-color: #333333;
+    color: #f9f9f9;
+    padding: 20px 20px 0; /* Remove padding from the bottom */
+    text-align: center;
+    margin-top: auto; /* Add this to make the footer stick to the bottom */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-media {
+    font-size: 16px;
+  }
+  
+  .social-media a {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #df20af; /* Blue color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-media {
+      margin-top: 10px;
+    }
+  }

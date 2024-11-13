@@ -1,0 +1,176 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .maintenance-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  .maintenance-container h1 {
+    font-size: 32px;
+    color: #df20af;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  .report-form {
+    margin-bottom: 40px;
+  }
+  
+  .report-form table {
+    width: 100%;
+  }
+  
+  .report-form td {
+    padding: 10px;
+  }
+  
+  .report-form select,
+  .report-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .report-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #df20af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .report-form button:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Message styles */
+  .report-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  /* Request tracking card layout */
+  .request-tracking-container {
+    margin-bottom: 40px;
+  }
+  
+  .request-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .request-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .request-header {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .request-details {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .request-details p {
+    margin-bottom: 10px;
+  }
+  
+  /* Calendar for scheduled maintenance */
+  .scheduled-maintenance-container {
+    margin-bottom: 40px;
+  }
+  
+  .scheduled-maintenance-list {
+    list-style: none;
+  }
+  
+  .scheduled-maintenance-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .scheduled-maintenance-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .maintenance-date {
+    font-weight: bold;
+    color: #f1c40f;
+  }
+  
+  .maintenance-description {
+    margin-top: 5px;
+  }
+  
+  /* Contact form for support */
+  .contact-form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form textarea,
+  .contact-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #df20af;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #df20af;
+  }
+  

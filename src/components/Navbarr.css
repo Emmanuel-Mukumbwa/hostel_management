@@ -1,0 +1,42 @@
+/* Navbar styles */
+nav {
+    background-color: #df20af; /* Navbar background color */
+    padding: 15px 20px; /* Padding for the navbar */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ecf0f1; /* Light color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Margin for vertical spacing */
+    }
+}

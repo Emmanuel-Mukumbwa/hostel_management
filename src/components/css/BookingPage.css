@@ -1,0 +1,196 @@
+/* BookingPage specific styles */
+.booking-page-container {
+  padding: 30px; /* Increased padding for more breathing space */
+  max-width: 800px; /* Limiting the width for better readability */
+  margin: 20px auto; /* Added margin to separate from top of the viewport */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+/* Heading styles */
+.booking-page-container h1 {
+  font-size: 32px; /* Slightly reduced font size for balance */
+  color: #df20af;
+  text-align: center;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+/* Error message */
+.booking-page-container p.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card styles for sections */
+.card {
+  border: 1px solid #ccc; /* Light border for card effect */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space between cards */
+  background-color: #f9f9f9; /* Light background for cards */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form styles */
+.booking-form {
+  margin-bottom: 30px; /* More space after form */
+}
+
+/* Labels for form fields */
+.booking-form label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin for better separation */
+  font-weight: bold;
+  font-size: 16px; /* Ensured uniform font size for labels */
+  color: #333; /* Darker color for better readability */
+}
+
+/* Input and select styles */
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form select {
+  width: 100%;
+  padding: 12px; /* Increased padding for a more spacious feel */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px; /* More spacing between fields */
+  font-size: 16px;
+}
+
+/* Enhanced styles for room selection and date inputs */
+.booking-form select,
+.booking-form input[type="date"] {
+  background-color: #f9f9f9; /* Light background for inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.booking-form select:focus,
+.booking-form input[type="date"]:focus {
+  border-color: #df20af; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.booking-form button {
+  padding: 14px 20px; /* Slightly larger padding */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #df20af;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for scaling */
+  margin-top: 10px;
+  width: 100%; /* Full-width buttons */
+}
+
+.booking-form button:hover {
+  background-color: #df20af;
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.booking-form button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* User information styles */
+.user-info {
+  margin-top: 20px;
+  padding: 15px; /* Increased padding */
+  border: 1px solid #df20af; /* Blue border for user info */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Slightly off-white for contrast */
+}
+
+/* Enhanced styles for user information */
+.user-info p {
+  margin: 5px 0; /* Spacing between user info lines */
+  font-size: 16px; /* Consistent font size */
+}
+
+/* Total price and duration display */
+.booking-summary {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #df20af; /* Top border for separation */
+  padding-top: 15px; /* Padding for top spacing */
+}
+
+/* Reservation status message */
+.reservation-status {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #27ae60; /* Green for success messages */
+}
+
+/* Style for booking information display */
+.booking-info {
+  text-align: left;
+  margin-top: 20px; /* Added spacing for separation */
+  border: 1px solid #df20af; /* Blue border for booking info */
+  border-radius: 5px;
+  padding: 15px; /* Padding for comfort */
+  background-color: #f9f9f9; /* Slightly off-white for contrast */
+}
+
+.booking-info h4 {
+  margin: 10px 0; /* Margin for headers */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+}
+
+/* Individual booking details */
+.booking-info p {
+  margin: 5px 0; /* Spacing between booking details */
+  font-size: 16px; /* Consistent font size */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 10px;
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+}
+
+.footer .social-media {
+  margin-top: 10px; /* Space above social media links */
+}
+
+.footer .social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footer .social-media a:hover {
+  color: #df20af; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .booking-page-container {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .booking-form button {
+    padding: 12px; /* Adjust button padding */
+  }
+
+  .booking-info,
+  .user-info,
+  .guest-info {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
