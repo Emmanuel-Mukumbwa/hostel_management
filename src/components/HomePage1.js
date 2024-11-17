@@ -18,7 +18,7 @@ const HomePage = () => {
   // Function to fetch rooms data
   const fetchRooms = () => {
     setLoading(true);
-    axios.get('http://localhost/api/getRooms.php')
+    axios.get('https://logohostel.ct.ws/api/getRooms.php')
       .then(response => {
         setRooms(response.data);
         setLoading(false);
