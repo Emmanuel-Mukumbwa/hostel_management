@@ -16,11 +16,18 @@ function Login({ setRole }) {
     fetch('https://logohostel.ct.ws/api/getUserRole.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: `username=${username}&password=${password}`
+      body: `username=${username}&password=${password}`,
+      credentials: 'include', // Include credentials (cookies) if needed
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Received data from server:', data); // Log the entire response
+      .then((response) => {
+        if (!response.ok) {
+          // Handle HTTP error statuses
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log('Received data from server:', data);
 
         if (data.role) {
           // Store role, email, and contact locally
@@ -32,19 +39,19 @@ function Login({ setRole }) {
 
           // Perform role-based redirection
           if (data.role === 'Admin' || data.role === 'Admin User' || data.role === 'landlord') {
-            navigate('/admin');  // Redirect to admin page
+            navigate('/admin'); // Redirect to admin page
           } else if (data.role === 'normal' || data.role === 'normal User') {
-            navigate('/homepage1');  // Redirect to homepage for normal users
+            navigate('/homepage1'); // Redirect to homepage for normal users
           } else if (data.role === 'landlord' || data.role === 'Landlord') {
-            navigate('/landlord');  // Redirect to landlord page
+            navigate('/landlord'); // Redirect to landlord page
           } else {
-            navigate('/');  // Redirect to home for any other role
+            navigate('/'); // Redirect to home for any other role
           }
         } else {
           setLoginMessage('Invalid login credentials');
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.error('Error logging in:', err);
         setLoginMessage('An error occurred. Please try again.');
       });
