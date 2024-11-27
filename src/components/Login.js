@@ -13,7 +13,7 @@ function Login({ setRole }) {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    fetch('https://logohostel.ct.ws/api/getUserRole.php', {
+    fetch('http://localhost:5000/api/getUserRole.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: `username=${username}&password=${password}`,
