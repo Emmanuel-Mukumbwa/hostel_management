@@ -15,7 +15,7 @@ const HomePage = () => {
   const isLoggedIn = localStorage.getItem('isLoggedIn');
 
   useEffect(() => {
-    fetch('http//localhost/getRooms.php')
+    fetch('https://logohostel.ct.ws/api/getRooms.php')
       .then(response => response.json())
       .then(data => {
         if (data.message) {
