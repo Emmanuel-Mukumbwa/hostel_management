@@ -17,11 +17,10 @@ function Login({ setRole }) {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: `username=${username}&password=${password}`,
-      credentials: 'include', // Include credentials (cookies) if needed
+      credentials: 'include', // Include cookies/auth headers
     })
       .then((response) => {
         if (!response.ok) {
-          // Handle HTTP error statuses
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         return response.json();
@@ -38,9 +37,9 @@ function Login({ setRole }) {
           setRole(data.role); // Update state with the fetched role
 
           // Perform role-based redirection
-          if (data.role === 'Admin' || data.role === 'Admin User' || data.role === 'landlord') {
+          if (data.role === 'Admin' || data.role === 'Admin User') {
             navigate('/admin'); // Redirect to admin page
-          } else if (data.role === 'normal' || data.role === 'normal User') {
+          } else if (data.role === 'normal' || data.role === 'Normal User') {
             navigate('/homepage1'); // Redirect to homepage for normal users
           } else if (data.role === 'landlord' || data.role === 'Landlord') {
             navigate('/landlord'); // Redirect to landlord page
